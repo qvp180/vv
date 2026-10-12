@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.item-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 90px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+.item-button:hover {
+    background: #f0f0f0;
+}
+
+.item-button img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.item-button span {
+    flex: 1;
+}
+
+.item-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
